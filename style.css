@@ -1,0 +1,41 @@
+body{
+  
+    background-size: 1950px 900px;
+    background-repeat: no-repeat;
+    background-color: gray;
+    position: relative;
+}
+
+.box {
+    background: rgb(248, 248, 248);
+    height: 30px;
+    width: 80px;
+  }
+  
+  img {
+    width: 1885px;
+    height: 175px;
+    
+  }
+
+  H1 { text-align: center }
+
+  .whiteRat {
+    position: absolute; top: 77vh; 
+    
+  }
+
+  .greyRat {
+    position: absolute; top: 83vh; 
+    
+  }
+
+  .brownRat {
+    position: absolute; top: 89vh; 
+    
+  }
+
+  #track {
+      position: absolute; top: 83vh;
+      opacity: 0.75;
+  }

@@ -6,26 +6,82 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rat Race</title>
     <link rel="stylesheet" href="./style.css" />
-    <link rel="icon" type="image/jpg" href="image/ratsrace.jpg"/>
+    <link rel="icon" type="image/jpg" href="image/flag.jpg"/>
 </head>
 <title>Rat Race</title>
 </head>
 <body>
-    <style>
-        body {
-          background-image: url('image/gravel.jpg');
-        }
-        </style>
 
-<h1>Welcome to Rat Races</h1>
-<p>This is a paragraph.</p>
-<div class="Bets">
-    <div >
-        <button class="btn btn-primary" id="Rat-add-button">Add Money</button>        
-        <button class="btn btn-danger" id="Rat-minus-button">Minus Money</button>
+    <h1 style="color:rgb(201, 7, 7);">Welcome to Rat Races</h1>
+
+    <div id="track" class="">
+    <img src="image/Track.png" alt="Track">
+    
     </div>
+
+
+    <div  class="brownRat">
+        <img src="image/brownRat.png" alt="brownRat"style="width:120px;height:150px;">
+
+    </div>
+
+    <div id ="greyRat" class="greyRat">
+        <img src="image/greyRat.png" alt="greyRat"style="width:120px;height:150px;">
+        
+    </div>
+
+    <div id ="whiteRat" class="whiteRat">
+        <img src="image/whiteRat.png" alt="whiteRat"style="width:120px;height:150px;">
+        
+    </div>
+
+
+
+
+<h3 style="color:rgb(255, 255, 255);">Place your bets.</h3>
+<div class="Bets">        
+        <div class="white">
+        <button class="btn btn-primary" id="Rat-add-button">Money on white</button>
+        <button class="btn btn-danger" id="Rat-minus-button">Minus Money</button>
+
+        <div class="grey">
+            <button class="btn btn-primary" id="Rat-add-button">Money on grey</button>
+            <button class="btn btn-danger" id="Rat-minus-button">Minus Money</button>
+
+            <div class="brown">
+                <button class="btn btn-primary" id="Rat-add-button">Money on brown</button>
+                <button class="btn btn-danger" id="Rat-minus-button">Minus Money</button>
+        </div> 
+
+        <div class="Start">
+            <p>
+                <button onclick="myMove()">Start Race!</button>
+            </p>
+    </div> 
+    <div class="wallet">
+        <h3 style="color:rgb(255, 255, 254);">Wallet</h3>
+        <div class="box"></div>
+
+    </div>
+            
 </div>
 
+<style>
+    
+    body {
+      background-image: url('image/street.jpg');    
+      
+    }
+    </style>
+
+
+
+<script src="./whiteRat.js"></script>
+
+
 </body>
+
+
+
 
 </html>
