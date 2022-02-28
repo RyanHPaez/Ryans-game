@@ -13,6 +13,21 @@ Allow the user to place bets and keep track of their score.
 - a Rat will declared a winner/loser or if it tied.
 - funds will either be added or minus from users wallet
 
+// create Track---
+// create background---
+// create Rats---
+// create start line---
+// create motion
+// create finish line---
+// create user---
+// create bets on Rats---
+// create wallet---
+// create winner
+// create loser
+// create tie
+
+
+
 ### Project requirements
 - This game can be designed for 2 or more players (PvP) or 1 player (PvE)
 The second player in a PvP game can be a person or an AI

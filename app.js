@@ -1,26 +1,20 @@
-// create Track
-// create background
-// create Rats
+let ratList = []
 
-// create start line
-// create motion
-
-// create finish line
-// create user
-// create bets on Rats
-// create wallet
-// create winner
-// create loser
-// create tie
-
-
-function sleep(time){
-    return new Promise(resolve => {
-        setTimeout(resolve, time)
-    })  
+window.onload = (event) => {
+    ratList = Array.from(document.getElementById("rat").children).map((ratElement) => new rat(ratElement.id))
+    console.log ('-------------ratList', ratList)
 }
 
-function test(){
-    sleep(5000)
-        .then(() => console.log('Hello World'))
+
+function startRace() {
+    ratList.forEach(function () {
+            rat.run()
+        })
+}
+
+function stopRace() {
+    ratList.forEach(() => {
+        rat.reset()
+    })
+   // move.reset()
 }
