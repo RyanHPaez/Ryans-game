@@ -1,8 +1,6 @@
-function randomInterger(min, max) {
-    return Math.floor(Math.random() * (max - min + 1) + min)
-}
+
 //main rat class------------------
-class rat { 
+class Rat { 
     constructor(id) {
         this.id = id
         this.movementLoop = null
@@ -13,31 +11,34 @@ class rat {
 //stops movement
 reset() {
     clearInterval(this.movementLoop);
-    this.ratElement.src = 'image/${this.id}/rat.png'
+    this.ratElement= document.getElementById(this.id);
     this.ratElement.style.left = "0px";
-    this.finishedStatus = false
+    this.finishedStatus = true
 }
+
+
 
 run() {
-    this.ratElement.src = 'image/${this.id}/rat.png'//changes gif
+    ratList= Array.from(document.getElementById("rats").children).map((ratElement)=> new Rat(ratElement.id));//changes gif
 
     this.movementLoop = setInterval(() => {
-        var step = 5; // this is the speed
+        var step = 25; // this is the speed
 
-        var xPosition = this.Element.offsetLeft;
+        var xPosition = this.ratElement.offsetLeft;
 
-        if (xPosition < 700){
+        if (xPosition < 1700){
             xPosition = xPosition + step;
-            this.ratElement.style.left =
-            xPosition + "px"; //horizontal movement
+            this.ratElement.style.left = xPosition + "px"; //horizontal movement
             
         } else {
-            this.ratElement.src = 'image/${this.id}/rat.png'
+            this.ratElement= document.getElementById(this.id);
             this.finishedStatus = true
         }
-    }, randomInteger(40, 70));
+    }, 1000/(Math.random() * 30 + 12));
     }
 }
+
+
 
 
 

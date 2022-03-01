@@ -1,20 +1,26 @@
-let ratList = []
+const rats = ['rat4', 'rat2', 'rat3']
+rats.forEach(rat =>console.log(rats))
 
 window.onload = (event) => {
-    ratList = Array.from(document.getElementById("rat").children).map((ratElement) => new rat(ratElement.id))
+    ratList= Array.from(document.getElementById("rats").children).map((ratElement)=> new Rat(ratElement.id));
     console.log ('-------------ratList', ratList)
 }
 
 
+
+
 function startRace() {
-    ratList.forEach(function () {
-            rat.run()
-        })
+    ratList.forEach((rat) => {
+                rat.run()
+            
+    })
 }
 
+
 function stopRace() {
-    ratList.forEach(() => {
+    ratList.forEach((rat) => {
         rat.reset()
-    })
-   // move.reset()
-}
+    })}
+//    move.reset()
+
+
