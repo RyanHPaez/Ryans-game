@@ -3,26 +3,31 @@
 class Rat { 
     constructor(id) {
         this.id = id
-        this.movementLoop = null
+        this.movementLoop = true
         this.ratElement = document.getElementById(this.id)
-        this.finishedStatus = false
+        this.finishedStatus = null
 }
 
-//stops movement
+//restarts race
 reset() {
-    clearInterval(this.movementLoop);
+    
+    clearInterval(this.finishedStatus);
     this.ratElement= document.getElementById(this.id);
     this.ratElement.style.left = "0px";
-    this.finishedStatus = true
-}
+    
+    
 
+    
+    
+}
+                      
 
 
 run() {
     ratList= Array.from(document.getElementById("rats").children).map((ratElement)=> new Rat(ratElement.id));//changes gif
 
     this.movementLoop = setInterval(() => {
-        var step = 25; // this is the speed
+        var step = 35; // this is the speed
 
         var xPosition = this.ratElement.offsetLeft;
 
@@ -32,49 +37,35 @@ run() {
             
         } else {
             this.ratElement= document.getElementById(this.id);
-            this.finishedStatus = true
+            this.finishedStatus = false
         }
-    }, 1000/(Math.random() * 30 + 12));
+    }, 
+    1000/(Math.random() * 20 + 15));
     }
 }
 
+//   var betRat, amount, funds;  //Global variables
 
+// document.getElementById('startRace').onclick = function () {
+//     //Get the values from the DOM
+//     betRat = document.getElementById('betRat').value;
+//     amount = parseInt(document.getElementById('amount').value);
+//     funds = parseInt(document.getElementById('funds').innerText);
 
-
-
-
-
-
-
-//works
-
-// var move = {
-
-//     reset: function() {
-//         clearInterval(movementLoop);
-//         documentElementById('whiteRat'.style.left="500px");
-//         documentElementById('whiteRat'.style.top="500px");
-//     },
-
-//     disp: function(){
-//         var step = 80;
-//         console.log(document.getElementById('whiteRat'))
-//         var x = document.getElementById('whiteRat').offsetLeft;
-//         //var x = document.getElementById('greyRat').offsetLeft;
-//         console.log('---------------x', x)
-//         if(x < 1600) {
-//             x = x + step;
-//             document.getElementById('whiteRat').style.left = x +"px";
-//             console.log('----- position', document.getElementById('whiteRat').style.left)
-//         }
-//     },
-
-//     timer: function(){
-//         var movementLoop = setInterval(() => {
-//             this.disp();
-//         },900);
+//     //Basic input validation
+//     if (amount > funds) {
+//         alert("You do not have enough funds.");
+//         return 0;
+    
+//     } else if (amount < 1) {
+//         alert("Bet amount must be greater than 0.");
+//         return 0;
 //     }
-// }
+
+
+
+
+
 
 
 

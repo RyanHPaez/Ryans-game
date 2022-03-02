@@ -17,11 +17,14 @@ Allow the user to place bets and keep track of their score.
 // create background---
 // create Rats---
 // create start line---
-// create motion
+// create motion---
+// create race---
 // create finish line---
-// create user---
+// create userbox---
 // create bets on Rats---
 // create wallet---
+// create function for user box and race
+// fix reload button--
 // create winner
 // create loser
 // create tie

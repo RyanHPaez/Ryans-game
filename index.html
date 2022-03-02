@@ -37,23 +37,27 @@
             <img id = "rat3" style ="top: 89vh"
             class = "rat-image" src = "image/whiteRat/rat.png"/>
 
+     
         </div>
-    </div>
-</div>   
-
 
    <div id="bet">
+
+    <div id = youHave>
         <p>
             <h2>You  have</h2>           
             <span id="funds">500</span>
         
         </p>
+    </div>
+
+    <div id = placeYourBet>
 
 			<label>
                 <h2>Place Your Bet</h2> 
                 ($)
 
             </label>
+        </div>
 
                 <input type="number" value="1" id="amount">                
                 
@@ -69,7 +73,30 @@
 					<option value="brownRat">BrownRat</option>
 						
 				</select>
-	</div>            
+
+                <div id="user-button">
+                   
+                    <button onclick = "startRace()">Start</button>
+                    
+                    <button onclick="location.reload();">Restart Race </button>
+                    
+                    
+                </div>
+                <div>
+                
+                
+                    
+                    </div>
+
+        
+    </div>
+</div>
+                
+
+                <!-- <button id="startRace">
+					Start Race
+				</button> -->
+	</div>  
 
     
 <style>
@@ -80,16 +107,6 @@
     }
     
 </style>
-
-
-
-<div class="user-button">
-    <button onclick = "startRace()">Start</button>
-    <button onclick = "stopRace()">Restart</button>
-    
-</div>
-
-
 
 </body>
 

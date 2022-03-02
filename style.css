@@ -80,10 +80,20 @@ body{
     width: 8vw;
     border: 2px solid #555;
     border-radius: 10px;
-    margin-top: 33vh;
-    margin-left: 46vw;
-    
+    margin-top: 27vh;
+    margin-left: 46vw;    
     float: left;
+
+  }
+
+  #youHave {
+    margin-top: -1vw;
+
+  }
+
+
+  #placeYourBet {
+    margin-top: -1vw;
 
   }
   
@@ -100,8 +110,8 @@ body{
   label, input, select {float:  left; display: block; width: 8vw; margin-bottom: 0.5vh;}
   label {clear: left;}
 
-  .user-button button {
-    margin-top: 23vw;    
+  #user-button button {
+    margin-top: 1vw;    
     background: #ffefb4;    
     border-radius: 10px;
     font-family: Arial;
