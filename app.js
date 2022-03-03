@@ -4,9 +4,6 @@ window.onload = (event) => {
     
 }
 
-
-
-
 function startRace() {
     ratList.forEach((rat) => {
                 rat.run()
