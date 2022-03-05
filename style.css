@@ -1,6 +1,6 @@
 body{
   
-    background-size: 1950px 900px;
+    background-size: 1950px 1000px;
     background-repeat: no-repeat;
     background-color: gray;
     position: relative;
@@ -68,10 +68,11 @@ body{
 
   #track {
       position: absolute; 
-      top: 83vh;
+      top: 86vh;
       opacity: 0.75;
 
   }
+
 #results{
   
   text-align: center;
@@ -136,3 +137,47 @@ body{
     text-shadow: 1px 1px 1px #333;
     
   } 
+
+  
+  
+  /* The slider itself */
+  .slidecontainer {
+    
+    
+    width: 20%;
+  }
+  
+  .slider {
+    margin-left: 49vw;
+    margin-top: -37vh;
+    -webkit-appearance: none;
+    width: 20%;
+    height: 25px;
+    background: #d3d3d3;
+    outline: none;
+    opacity: 1;
+    -webkit-transition: .2s;
+    transition: opacity .2s;
+  }
+  
+  .slider:hover {
+    opacity: 1;
+  }
+  
+  .slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 25px;
+    height: 25px;
+    background: #04AA6D;
+    cursor: pointer;
+  }
+  
+  .slider::-moz-range-thumb {
+    width: 25px;
+    height: 25px;
+    background: #04AA6D;
+    cursor: pointer;
+  }
+  
+  
