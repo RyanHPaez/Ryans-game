@@ -5,41 +5,28 @@ class Rat {
         this.movementLoop = true
         this.ratElement = document.getElementById(this.id)
         this.finishedStatus = null
-        this.finishOrder = []
+        this.results = results
 }                    
 
 run() {
-
-    
-          
-      
-
-     this.movementLoop = setInterval(() => {
-
- 
-   
-    var step =7; // this is the speed
-
-    var xPosition = this.ratElement.offsetLeft;
+    this.movementLoop = setInterval(() => {
+        var step =7; // this is the speed
+        var xPosition = this.ratElement.offsetLeft;
 
     if (xPosition < 1700)
     {// how far
         xPosition = xPosition + step;
         this.ratElement.style.left = xPosition + "px"; //horizontal movement
-    } else {
-        
-        this.finishedStatus = true;
-        this.finishOrder.push(this.id) 
-        alert (this.id  );
-        // reload();
-        
+    } else {        
+        clearInterval(this.movementLoop);
+        window.alert(this.id + "Wins!" );
 
-       
+        // this.results.push[this.id];
 
-        // run logic here to .push(this.id) into the finish array
-    }
-    
-    
+          
+
+        
+    }   
 },
 100/(Math.random() * 20 + 15));
 // console.log("ratEmenlet")

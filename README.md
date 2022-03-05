@@ -25,9 +25,10 @@ Allow the user to place bets and keep track of their score.
 // create wallet---
 // create function for user box and race
 // fix reload button--
-// create winner
+// create winner---
 // create loser
 // create tie
+
 
 
 
