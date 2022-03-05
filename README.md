@@ -23,10 +23,10 @@ Allow the user to place bets and keep track of their score.
 // create userbox---
 // create bets on Rats---
 // create wallet---
-// create function for user box and race
+// create function for user box and race-
 // fix reload button--
 // create winner---
-// create loser
+// create loser---
 // create tie
 
 

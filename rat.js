@@ -25,19 +25,16 @@ run() {
         clearInterval(this.movementLoop); //needs this tostop loop
         
         if (winningRat == (null)) {
-            winningRat= this.id;
-
-            
-            
+            winningRat= this.id;            
            
             if (winningRat == (user.betRat)) {
                user.funds = Number(user.funds) + Number(user.bet)
-               document.getElementById("funds").textContent = user.funds
+               document.getElementById("funds").textContent = user.funds 
                window.alert(this.id + "Wins!" );//alerts window
             } else   { 
                 user.funds = Number(user.funds) - Number(user.bet)
                 document.getElementById("funds").textContent = user.funds
-                // window.alert(this.id + "Lost!" );//alerts window
+                window.alert(this.id + "Lost!" );//alerts window
             }
 
         }
