@@ -29,14 +29,19 @@ run() {
            
             if (winningRat == (user.betRat)) {
                user.funds = Number(user.funds) + Number(user.bet)
-               document.getElementById("funds").textContent = user.funds 
-               window.alert(this.id + "Wins!" );//alerts window
+               document.getElementById("funds").textContent = user.funds                
+               document.getElementById("results").textContent = results.winner
+               return this.winner
+            
+            
             } else   { 
                 user.funds = Number(user.funds) - Number(user.bet)
                 document.getElementById("funds").textContent = user.funds
-                window.alert(this.id + "Lost!" );//alerts window
+                document.getElementById("results").textContent = results.lost
+                return this.lost               
+                
             }
-
+           
         }
     }   
 },100/(Math.random() * 20 + 15));// make a different winner everytime

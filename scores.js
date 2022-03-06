@@ -4,13 +4,11 @@ window.onload = function () {
     user = {
         funds: document.getElementById("funds").textContent,
         bet: document.getElementById("amount").value,
-        betRat: document.getElementById("betRat").value,
-       
+        betRat: document.getElementById("betRat").value,      
        }
         // adding event listeners to object
        document.getElementById("amount").addEventListener('change', change);
-       document.getElementById("betRat").addEventListener('change', changeBetRat);
-       
+       document.getElementById("betRat").addEventListener('change', changeBetRat);       
        
 }
 // identifying what user will control
@@ -31,3 +29,12 @@ function changeBetRat (event) {
     
 }
 
+// function saveMoney (event) {
+//     user.funds = amount.funds;
+//     localStorage.setItem('user','funds')
+// }
+// console.log (localStorage)
+
+// function getsaveMoney (event){
+//     localStorage.getItem('user','funds');
+// }
